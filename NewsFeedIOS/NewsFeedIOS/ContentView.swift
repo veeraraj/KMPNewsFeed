@@ -2,10 +2,8 @@ import SwiftUI
 import kmpNewsFeedLib
 
 struct ContentView: View {
-	let greet = Greeting().greet()
-
 	var body: some View {
-		Text(greet)
+		AboutListView()
 	}
 }
 
