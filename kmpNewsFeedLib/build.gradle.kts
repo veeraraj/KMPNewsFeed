@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
 }
 
+@OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
     androidTarget {
         compilations.all {
@@ -25,7 +26,13 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            //put your multiplatform dependencies here
+            implementation(libs.kotlinx.coroutines.core)
+        }
+        androidMain.dependencies{
+            implementation(libs.androidx.lifecycle.viewmodel.ktx)
+        }
+        iosMain.dependencies {
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
