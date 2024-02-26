@@ -1,10 +1,15 @@
 import SwiftUI
+import kmpNewsFeedLib
 
 @main
 struct iOSApp: App {
-	var body: some Scene {
-		WindowGroup {
-			ContentView()
-		}
-	}
+    init() {
+        KoinInitializerKt.doInitKoin()
+    }
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }

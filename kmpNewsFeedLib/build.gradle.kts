@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
-    id("co.touchlab.skie") version "0.4.19"
+    id("co.touchlab.skie") version "0.6.1"
     kotlin("plugin.serialization") version "1.9.20"
 }
 
@@ -33,6 +33,7 @@ kotlin {
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.kotlinx.datetime)
+            implementation(libs.koin.core)
         }
         androidMain.dependencies{
             implementation(libs.androidx.lifecycle.viewmodel.ktx)

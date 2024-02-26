@@ -17,7 +17,7 @@ class ArticlesViewModelWrapper: ObservableObject {
 
 
     init() {
-        articlesViewModel = ArticlesViewModel()
+        articlesViewModel = ArticlesInjector().articlesViewModel
         articlesState = articlesViewModel.articlesState.value
     }
 
