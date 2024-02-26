@@ -1,6 +1,7 @@
 package com.example.newsfeed.android
 
 import android.app.Application
+import com.example.newsfeed.android.di.databaseModule
 import com.example.newsfeed.android.di.viewModelsModule
 import com.example.newsfeed.di.sharedKoinModules
 import org.koin.android.ext.koin.androidContext
@@ -14,7 +15,7 @@ class NewsFeedApp: Application() {
     }
 
     private fun initKoin() {
-        val modules = sharedKoinModules + viewModelsModule
+        val modules = sharedKoinModules + viewModelsModule + databaseModule
 
         startKoin {
             androidContext(this@NewsFeedApp)

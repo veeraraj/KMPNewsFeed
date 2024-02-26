@@ -6,7 +6,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack{
-            ArticlesScreen(viewModel: .init())
+            ArticlesView(viewModel: .init())
                 .toolbar {
                     ToolbarItem {
                         Button {

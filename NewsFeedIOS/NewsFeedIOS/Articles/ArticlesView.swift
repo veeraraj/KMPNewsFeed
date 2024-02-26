@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ArticlesScreen: View {
+struct ArticlesView: View {
 
     @ObservedObject private(set) var viewModel: ArticlesViewModelWrapper
 
@@ -36,6 +36,8 @@ struct ArticlesScreen: View {
 
         }.onAppear{
             self.viewModel.startObserving()
+        }.refreshable {
+            viewModel.articlesViewModel.getArticles(forceFetch: true)
         }
     }
 }

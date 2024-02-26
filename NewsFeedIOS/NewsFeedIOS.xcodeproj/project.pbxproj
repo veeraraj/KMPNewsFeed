@@ -383,6 +383,7 @@
 					"$(inherited)",
 					"-framework",
 					kmpNewsFeedLib,
+					"-lsqlite3",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.NewsFeedIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +413,7 @@
 					"$(inherited)",
 					"-framework",
 					kmpNewsFeedLib,
+					"-lsqlite3",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = orgIdentifier.NewsFeedIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
