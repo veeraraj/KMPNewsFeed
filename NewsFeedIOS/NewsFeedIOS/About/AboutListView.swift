@@ -6,8 +6,8 @@
 //  Copyright © 2024 orgName. All rights reserved.
 //
 
-import kmpNewsFeedLib
 import SwiftUI
+import kmpNewsFeedLib
 
 struct AboutListView: View {
   private struct RowItem: Hashable {
